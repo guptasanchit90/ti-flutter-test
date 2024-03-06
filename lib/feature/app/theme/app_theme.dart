@@ -42,7 +42,7 @@ class AppTheme {
     displayMedium: TextStyle(
       fontFamily: 'HelveticaNowText',
       fontSize: 20,
-      fontWeight: FontWeight.w700,
+      fontWeight: FontWeight.w400,
     ),
     displaySmall: TextStyle(
       fontFamily: 'HelveticaNowText',
