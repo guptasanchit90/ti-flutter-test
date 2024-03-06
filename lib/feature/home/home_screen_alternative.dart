@@ -14,10 +14,10 @@ class HomeScreenAlternative extends StatelessWidget {
     return Stack(
       children: [
         Image.asset('images/background.png'),
-        SingleChildScrollView(
+        const SingleChildScrollView(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
-            children: const [
+            children: [
               SizedBox(height: 24),
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 16.0),
