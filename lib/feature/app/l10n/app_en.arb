@@ -32,5 +32,13 @@
   "new_message": "New message",
   "book_appointment": "Book appointment",
   "empty_reminders_message": "You don't have any reminders yet",
-  "new_appointment": "New appointment"
+  "new_appointment": "New appointment",
+  "onboarding_init_message": "We'll take you on a quick tour of your homepage.",
+  "onboarding_init_action":"Let's go",
+  "onboarding_reminders_message": "The fist section shows your reminders. If there are any tasks requiring action from you, you'll find them here.",
+  "onboarding_reminders_action":"Scroll to the next section",
+  "onboarding_appointments_message": "This second section gives you easy access to your upcoming appointments.",
+  "onboarding_appointments_action":"Continue",
+  "onboarding_inbox_message": "At the bottom of the page, you'll find your messages and some extra resources.",
+  "onboarding_inbox_action":"Done"
 }
