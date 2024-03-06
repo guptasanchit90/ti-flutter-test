@@ -10,9 +10,11 @@ class Appointments extends StatelessWidget {
   const Appointments({
     Key? key,
     this.verticalLayout = false,
+    this.showSingle = false,
   }) : super(key: key);
 
   final bool verticalLayout;
+  final bool showSingle;
 
   @override
   Widget build(BuildContext context) {
@@ -76,6 +78,7 @@ class Appointments extends StatelessWidget {
         condensed: verticalLayout,
       ),
     ];
+    children = showSingle ? [children.first] : children;
 
     return verticalLayout
         ? SectionColumn(children: children)
