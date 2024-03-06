@@ -4,6 +4,7 @@ import 'package:chrconnecthpdraft/feature/billing/billing_screen.dart';
 import 'package:chrconnecthpdraft/feature/home/home_screen.dart';
 import 'package:chrconnecthpdraft/feature/inbox/inbox_screen.dart';
 import 'package:chrconnecthpdraft/feature/main/bloc/main_bloc.dart';
+import 'package:chrconnecthpdraft/feature/onboarding/onboarding_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_expandable_fab/flutter_expandable_fab.dart';
@@ -77,6 +78,21 @@ class _MainScreenState extends State<MainScreen> {
                     fullDashboard: !_mainBloc.state.defaultVersion),
               ),
             ),
+            Padding(
+              padding: const EdgeInsets.all(20.0),
+              child: OutlinedButton(
+                style: OutlinedButton.styleFrom(
+                    textStyle: const TextStyle(fontSize: 20)),
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const OnboardingScreen()),
+                  );
+                },
+                child: const Text('Show Onboarding'),
+              ),
+            ),
           ],
         ),
       ),
@@ -142,6 +158,7 @@ class _MainScreenState extends State<MainScreen> {
         child: const Icon(Icons.add_rounded),
         children: [
           FloatingActionButton.extended(
+            heroTag: null,
             icon: Image.asset(
               'images/hospital.png',
               color: context.colorScheme.onPrimary,
@@ -155,6 +172,7 @@ class _MainScreenState extends State<MainScreen> {
             onPressed: () {},
           ),
           FloatingActionButton.extended(
+            heroTag: null,
             icon: Image.asset(
               'images/edit-20.png',
               color: context.colorScheme.onPrimary,
@@ -168,6 +186,7 @@ class _MainScreenState extends State<MainScreen> {
             onPressed: () {},
           ),
           FloatingActionButton.extended(
+            heroTag: null,
             icon: const Icon(Icons.add_rounded),
             label: Text(
               context.localizations.book_appointment,
